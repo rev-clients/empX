@@ -124,8 +124,6 @@ $(document).ready(function () {
 
   buttonMenu()
   menuModel()
-
-  scrollHandler()
   dropDown()
 })
 
@@ -175,32 +173,6 @@ function buttonMenu() {
       body.addClass('menu-active')
       menuPagina.addClass('active')
     }
-  }
-}
-
-/**
- * Scroll para el header
- */
-
-function scrollHandler() {
-  var lastScrollTop = 0
-  $(document).scroll(listenScroll)
-  function listenScroll() {
-    var st = $(this).scrollTop()
-    var pbh = $('.section-1').height()
-
-    if (st > lastScrollTop) {
-      $('.container-header').addClass('scroll-down')
-    } else {
-      $('.container-header').removeClass('scroll-down')
-    }
-
-    if (st > pbh / 2) {
-      $('.container-header').addClass('alternative-scroll')
-    } else {
-      $('.container-header').removeClass('alternative-scroll')
-    }
-    lastScrollTop = st
   }
 }
 

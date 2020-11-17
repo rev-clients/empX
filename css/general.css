@@ -274,7 +274,7 @@
 }
 
 .link-2:hover span::before {
-  content: "";
+  content: '';
   border-radius: 2px;
   width: 100%;
   height: 100%;
@@ -355,7 +355,7 @@
 }
 
 .button-primary:hover::before {
-  content: "";
+  content: '';
   background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
   top: 0px;
@@ -373,7 +373,7 @@
 }
 
 .button-secondary:hover::before {
-  content: "";
+  content: '';
   background-color: rgba(194, 202, 207, 0.2);
   position: absolute;
   top: 0px;
@@ -401,20 +401,20 @@
   display: grid;
   max-width: 2560px;
   grid-template-columns: repeat(24, 1fr);
-  grid-template-areas: "a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0" "b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0";
+  grid-template-areas: 'a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0' 'b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0';
   row-gap: var(--size-dynamic0250);
   margin: auto;
 }
 
 @media (min-width: 960px) {
   .grid-14-10 {
-    grid-template-areas: "a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0";
+    grid-template-areas: 'a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0';
   }
 }
 
 @media (min-width: 960px) {
   .grid-12-12 {
-    grid-template-areas: "a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0";
+    grid-template-areas: 'a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 a0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0';
   }
 }
 
@@ -444,36 +444,21 @@
   margin: 0;
 }
 
-/* link para volkwagen */
-/* esto es de prueba para  */
-/* TODO: sacar despues de la presentacion  */
-.container-link-volkwagen {
-  text-align: center;
-  margin: 0 auto;
-  bottom: 0;
-  padding: 50px;
-}
-
-/*  Portada con imagen  */
-.container-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.container-background > div {
-  width: 100%;
-  height: 100%;
+/*  Images */
+.container-img {
   position: relative;
-  z-index: 0;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  margin-bottom: 24px;
 }
 
-.container-background img {
+.container-img > * {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  height: 100%;
-  display: block;
-  width: 100%;
-  filter: brightness(80%);
 }

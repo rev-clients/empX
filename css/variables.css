@@ -120,6 +120,7 @@ body {
   --size-dynamic0450: 156px;
 
   --color-main: #0459a4;
+  --color-gray: #888;
   --color-main-hover: #045aa4c9;
   --background-lurid: var(--color-main);
   --color-lurid: white;
